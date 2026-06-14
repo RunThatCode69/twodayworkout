@@ -1,142 +1,228 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 72px 24px 40px;
+}
 
-  --text-primary: #000;
-  --text-secondary: #666;
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
+.title {
+  font-size: clamp(2.6rem, 8vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  margin: 0;
+}
 
+.tagline {
+  margin: 18px auto 0;
+  max-width: 520px;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.actions {
   display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
+  gap: 14px;
   justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  flex-wrap: wrap;
+  margin-top: 32px;
 }
 
-.main {
-  display: flex;
-  flex: 1;
+/* ---------- Workout cards ---------- */
+.workout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 32px auto 0;
+}
+
+@media (max-width: 760px) {
+  .workout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+}
+
+.table {
   width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  border-collapse: collapse;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.table th {
   text-align: left;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.table th.num,
+.table td.num {
+  text-align: center;
+  width: 64px;
+}
+
+.table td {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+  color: #283042;
+  font-weight: 600;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- Email form ---------- */
+.emailBox {
+  max-width: 460px;
+  margin: 28px auto 0;
+  background: var(--blue-50);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: left;
+}
+
+.emailRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+@media (max-width: 520px) {
+  .emailRow {
+    flex-direction: column;
+  }
+}
+
+.input {
+  flex: 1;
+  font: inherit;
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #283042;
+  outline: none;
+}
+.input:focus {
+  border-color: var(--blue-400);
+  box-shadow: 0 0 0 3px rgba(91, 157, 255, 0.25);
+}
+
+.status {
+  margin-top: 12px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.statusOk {
+  color: var(--blue-600);
+}
+.statusErr {
+  color: #d6453d;
+}
+
+/* ---------- Videos ---------- */
+.videos {
+  margin-top: 96px;
+}
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+@media (max-width: 760px) {
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+.videoCard {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #fff;
 }
-
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.ctas {
-  display: flex;
-  flex-direction: row;
+.videoFrame {
+  position: relative;
+  aspect-ratio: 16 / 9;
   width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
+  background: linear-gradient(135deg, var(--blue-50), var(--blue-100));
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+  justify-content: center;
+}
+.videoFrame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.videoPlaceholder {
+  color: var(--blue-600);
+  font-weight: 700;
+  text-align: center;
+  padding: 16px;
+}
+.videoLabel {
+  padding: 14px 18px;
+  font-weight: 700;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+/* ---------- Bottom-right photo ---------- */
+.portrait {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 132px;
+  height: 132px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: var(--shadow);
+  background: linear-gradient(135deg, var(--blue-100), var(--blue-400));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-align: center;
+  z-index: 40;
 }
-
-a.secondary {
-  border-color: var(--button-secondary-border);
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-}
-
 @media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .portrait {
+    width: 96px;
+    height: 96px;
+    right: 14px;
+    bottom: 14px;
   }
 }

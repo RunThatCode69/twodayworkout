@@ -1,0 +1,42 @@
+.about {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #283042;
+  margin-bottom: 40px;
+}
+
+.name {
+  color: var(--blue-600);
+}
+
+.h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--blue-600);
+  margin: 0 0 16px;
+}
+
+.legal {
+  background: var(--blue-50);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  color: #44546e;
+}
+.legal p {
+  margin: 0 0 14px;
+  font-size: 0.98rem;
+}
+.legal p:last-child {
+  margin-bottom: 0;
+}
+
+.contact {
+  margin-top: 32px;
+  color: var(--muted);
+}
