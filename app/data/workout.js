@@ -1,7 +1,8 @@
 // ─────────────────────────────────────────────────────────────
-// Placeholder workout content. Swap these out for your real plan.
+// Workout content. This is the single source of truth — the front
+// page, the downloadable PDF, and the emailed copy all read from here.
 // `videoUrl` accepts a YouTube/Vimeo embed URL (or leave "" for an
-// empty slot). The PDF + email use this same data, so edit once here.
+// empty slot). `note` on an exercise shows a smaller line beneath it.
 // ─────────────────────────────────────────────────────────────
 
 export const workout = {
@@ -9,27 +10,38 @@ export const workout = {
   tagline: "Two sessions a week. No fluff. Just show up.",
   days: [
     {
-      name: "Day 1 — Push / Lower",
+      name: "Day 1",
+      rest: "One minute to 90 seconds rest each",
       videoUrl: "", // e.g. "https://www.youtube.com/embed/VIDEO_ID"
       videoLabel: "Day 1 walkthrough",
       exercises: [
-        { move: "Goblet Squat", sets: "3", reps: "10" },
-        { move: "Dumbbell Bench Press", sets: "3", reps: "8–10" },
-        { move: "Walking Lunges", sets: "3", reps: "12 / leg" },
-        { move: "Overhead Press", sets: "3", reps: "10" },
-        { move: "Plank", sets: "3", reps: "45 sec" },
+        { move: "Goblet Squats", sets: "3", reps: "12" },
+        { move: "Dumbbell RDLs", sets: "3", reps: "12" },
+        { move: "Dumbbell Lunges", sets: "3", reps: "12" },
+        { move: "Suitcase Deadlifts", sets: "3", reps: "12" },
+        {
+          move: "Single Arm Farmers Carries",
+          sets: "3",
+          reps: "50 meters",
+          note: "or Side Planks — 3 x 30 seconds each side",
+        },
       ],
     },
     {
-      name: "Day 2 — Pull / Core",
+      name: "Day 2",
+      rest: "One minute to 90 seconds rest each",
       videoUrl: "",
       videoLabel: "Day 2 walkthrough",
       exercises: [
-        { move: "Romanian Deadlift", sets: "3", reps: "10" },
-        { move: "One-Arm Dumbbell Row", sets: "3", reps: "10 / side" },
-        { move: "Lat Pulldown (or Band)", sets: "3", reps: "12" },
-        { move: "Hammer Curls", sets: "3", reps: "12" },
-        { move: "Hanging Knee Raises", sets: "3", reps: "12" },
+        { move: "Bench Press", sets: "3", reps: "12" },
+        { move: "Pulldown", sets: "3", reps: "12" },
+        { move: "Single Arm Rows", sets: "3", reps: "12" },
+        { move: "Single Arm Press", sets: "3", reps: "12" },
+        {
+          move: "Single Arm Standing Dumbbell Hold",
+          sets: "3",
+          reps: "30 sec / side",
+        },
       ],
     },
   ],

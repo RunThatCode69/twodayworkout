@@ -60,6 +60,7 @@ export default function Home() {
         {workout.days.map((day) => (
           <div key={day.name} className={styles.card}>
             <h2 className={styles.cardTitle}>{day.name}</h2>
+            {day.rest && <p className={styles.rest}>{day.rest}</p>}
             <table className={styles.table}>
               <thead>
                 <tr>
@@ -71,7 +72,10 @@ export default function Home() {
               <tbody>
                 {day.exercises.map((ex) => (
                   <tr key={ex.move}>
-                    <td>{ex.move}</td>
+                    <td>
+                      {ex.move}
+                      {ex.note && <span className={styles.note}>{ex.note}</span>}
+                    </td>
                     <td className={styles.num}>{ex.sets}</td>
                     <td className={styles.num}>{ex.reps}</td>
                   </tr>

@@ -9,14 +9,26 @@ function buildEmailHtml() {
         .map(
           (ex) => `
             <tr>
-              <td style="padding:8px 0;border-bottom:1px solid #e3edff;">${ex.move}</td>
-              <td style="padding:8px 0;border-bottom:1px solid #e3edff;text-align:center;">${ex.sets}</td>
-              <td style="padding:8px 0;border-bottom:1px solid #e3edff;text-align:center;">${ex.reps}</td>
+              <td style="padding:8px 0;border-bottom:1px solid #e3edff;">
+                ${ex.move}
+                ${
+                  ex.note
+                    ? `<br><span style="color:#6f86a8;font-size:13px;">${ex.note}</span>`
+                    : ""
+                }
+              </td>
+              <td style="padding:8px 0;border-bottom:1px solid #e3edff;text-align:center;vertical-align:top;">${ex.sets}</td>
+              <td style="padding:8px 0;border-bottom:1px solid #e3edff;text-align:center;vertical-align:top;">${ex.reps}</td>
             </tr>`
         )
         .join("");
       return `
-        <h2 style="color:#3d86f5;margin:28px 0 8px;">${day.name}</h2>
+        <h2 style="color:#3d86f5;margin:28px 0 4px;">${day.name}</h2>
+        ${
+          day.rest
+            ? `<p style="color:#6f86a8;font-style:italic;margin:0 0 8px;">${day.rest}</p>`
+            : ""
+        }
         <table style="width:100%;border-collapse:collapse;font-size:15px;color:#283042;">
           <tr style="color:#6f86a8;font-size:12px;text-transform:uppercase;">
             <th style="text-align:left;padding-bottom:6px;">Exercise</th>

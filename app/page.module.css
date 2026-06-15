@@ -61,7 +61,22 @@
 .cardTitle {
   font-size: 1.25rem;
   font-weight: 800;
+  margin: 0 0 4px;
+}
+
+.rest {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.9rem;
   margin: 0 0 16px;
+}
+
+.note {
+  display: block;
+  font-weight: 500;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 2px;
 }
 
 .table {

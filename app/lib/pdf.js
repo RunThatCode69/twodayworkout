@@ -27,7 +27,16 @@ export function generateWorkoutPdf(workout) {
     doc.setFont("helvetica", "bold");
     doc.setFontSize(16);
     doc.text(day.name, margin, y);
-    y += 8;
+    y += 16;
+
+    // Rest note
+    if (day.rest) {
+      doc.setTextColor(111, 134, 168);
+      doc.setFont("helvetica", "italic");
+      doc.setFontSize(11);
+      doc.text(day.rest, margin, y);
+      y += 6;
+    }
 
     // Divider
     doc.setDrawColor(227, 237, 255); // --border
@@ -55,10 +64,23 @@ export function generateWorkoutPdf(workout) {
         doc.addPage();
         y = margin;
       }
+      doc.setTextColor(40, 40, 40);
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(12);
       doc.text(String(ex.move), margin, y);
       doc.text(String(ex.sets), pageW - margin - 120, y);
       doc.text(String(ex.reps), pageW - margin - 60, y);
-      y += 20;
+      y += 16;
+
+      if (ex.note) {
+        doc.setTextColor(111, 134, 168);
+        doc.setFont("helvetica", "italic");
+        doc.setFontSize(10);
+        doc.text(String(ex.note), margin, y);
+        y += 16;
+      } else {
+        y += 4;
+      }
     });
 
     y += 24;
