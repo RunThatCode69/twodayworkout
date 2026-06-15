@@ -5,6 +5,52 @@ import { workout } from "@/app/data/workout";
 import { downloadWorkoutPdf } from "@/app/lib/pdf";
 import styles from "./page.module.css";
 
+// Flip to true when the walkthrough videos are ready to publish.
+const SHOW_VIDEOS = false;
+
+const FAQ = [
+  {
+    q: "How often should I do this?",
+    a: "Twice a week, with at least one rest day between sessions. Two quality days you actually show up for beats five you skip.",
+  },
+  {
+    q: "Should I worry about how much weight to lift?",
+    a: "No. Start lighter than you think and nail your form first. You can always add weight next week — you can't un-tweak a back.",
+  },
+  {
+    q: "Do I need to warm up?",
+    a: "Yes. Spend 5–10 minutes getting your heart rate up and your joints moving before the first set. It prevents injuries and makes the work feel better.",
+  },
+  {
+    q: "How do I keep making progress?",
+    a: "Progressive overload: each week aim to add a little — one more rep, slightly more weight, or cleaner form. Small steps add up fast.",
+  },
+  {
+    q: "How fast should my reps be?",
+    a: "Controlled. Lower the weight slowly, move through the full range of motion, and don't use momentum. Slow and clean beats fast and sloppy.",
+  },
+  {
+    q: "What about rest between sets?",
+    a: "One minute to 90 seconds, as the plan says. Enough to recover, not so long you cool off.",
+  },
+  {
+    q: "Do I need to change how I eat?",
+    a: "Eat enough, and get plenty of protein (roughly your bodyweight in grams if you're building muscle). Food is what your training is built on.",
+  },
+  {
+    q: "How important is sleep?",
+    a: "Huge. Aim for 7–9 hours. Muscle is repaired and built while you rest, not while you train.",
+  },
+  {
+    q: "Should I be drinking more water?",
+    a: "Yes — stay hydrated through the day, not just during the workout. Even mild dehydration saps strength and focus.",
+  },
+  {
+    q: "What if something hurts?",
+    a: "Know the difference between muscle soreness (normal) and sharp or joint pain (stop). When in doubt, back off and check with a doctor.",
+  },
+];
+
 export default function Home() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState(null); // { ok: boolean, msg: string }
@@ -124,31 +170,46 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Videos */}
-      <section className={styles.videos}>
-        <h2 className="section-title shiny">Follow along</h2>
-        <div className={styles.videoGrid}>
-          {workout.days.map((day) => (
-            <div key={day.name} className={styles.videoCard}>
-              <div className={styles.videoFrame}>
-                {day.videoUrl ? (
-                  <iframe
-                    src={day.videoUrl}
-                    title={day.videoLabel}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                ) : (
-                  <div className={styles.videoPlaceholder}>
-                    🎥 Video coming soon
-                  </div>
-                )}
-              </div>
-              <div className={styles.videoLabel}>{day.videoLabel}</div>
+      {/* FAQ — beginner basics */}
+      <section className={styles.faq}>
+        <h2 className="section-title shiny">New to working out? Start here</h2>
+        <div className={styles.faqList}>
+          {FAQ.map((item) => (
+            <div key={item.q} className={styles.faqItem}>
+              <h3 className={styles.faqQ}>{item.q}</h3>
+              <p className={styles.faqA}>{item.a}</p>
             </div>
           ))}
         </div>
       </section>
+
+      {/* Videos — hidden until walkthroughs are ready (flip SHOW_VIDEOS) */}
+      {SHOW_VIDEOS && (
+        <section className={styles.videos}>
+          <h2 className="section-title shiny">Follow along</h2>
+          <div className={styles.videoGrid}>
+            {workout.days.map((day) => (
+              <div key={day.name} className={styles.videoCard}>
+                <div className={styles.videoFrame}>
+                  {day.videoUrl ? (
+                    <iframe
+                      src={day.videoUrl}
+                      title={day.videoLabel}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <div className={styles.videoPlaceholder}>
+                      🎥 Video coming soon
+                    </div>
+                  )}
+                </div>
+                <div className={styles.videoLabel}>{day.videoLabel}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Bottom-right portrait placeholder — swap for your photo */}
       <div className={styles.portrait} aria-label="Your photo">
