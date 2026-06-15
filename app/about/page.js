@@ -13,7 +13,7 @@ export default function About() {
 
         <p className={styles.lead}>
           Hi, I&apos;m{" "}
-          <strong className={styles.name}>Your Name Here</strong>. I built Two
+          <strong className={styles.name}>Brandon Poulter</strong>. I built Two
           Day Workout to make consistent training simple — two focused sessions
           a week that anyone can stick to.
         </p>
@@ -34,7 +34,7 @@ export default function About() {
           <p>
             By using this website and performing any of the exercises described,
             you do so entirely at your own risk. You voluntarily assume all risk
-            of injury, illness, or damage that may result. Your Name Here and
+            of injury, illness, or damage that may result. Brandon Poulter and
             Two Day Workout shall not be liable for any injury, loss, or damage
             of any kind arising from or related to your use of this website or
             the workouts contained herein.
@@ -45,11 +45,6 @@ export default function About() {
             attention.
           </p>
         </div>
-
-        <p className={styles.contact}>
-          Questions? Reach out at{" "}
-          <a href="mailto:your@email.com">your@email.com</a>.
-        </p>
       </section>
     </main>
   );
