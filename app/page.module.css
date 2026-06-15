@@ -120,10 +120,23 @@
   text-align: left;
 }
 
+.emailSub {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 6px 0 0;
+}
+
+.privacy {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
 .emailRow {
   display: flex;
   gap: 10px;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 @media (max-width: 520px) {
   .emailRow {

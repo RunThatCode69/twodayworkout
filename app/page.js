@@ -22,7 +22,10 @@ export default function Home() {
       });
       const data = await res.json();
       if (res.ok) {
-        setStatus({ ok: true, msg: "Sent! Check your inbox." });
+        setStatus({
+          ok: true,
+          msg: "Almost there — check your inbox and tap the confirmation link to get your workout.",
+        });
         setEmail("");
       } else {
         setStatus({ ok: false, msg: data.error || "Could not send." });
@@ -89,6 +92,10 @@ export default function Home() {
       {/* Email capture */}
       <section id="email" className={styles.emailBox}>
         <strong>Want it in your inbox?</strong>
+        <p className={styles.emailSub}>
+          We&apos;ll send a quick confirmation link to make sure it&apos;s really
+          you, then deliver the workout as a PDF.
+        </p>
         <form className={styles.emailRow} onSubmit={sendToEmail}>
           <input
             className={styles.input}
@@ -99,7 +106,7 @@ export default function Home() {
             onChange={(e) => setEmail(e.target.value)}
           />
           <button className="btn btn-primary" type="submit" disabled={sending}>
-            {sending ? "Sending…" : "Send it"}
+            {sending ? "Sending…" : "Confirm my email"}
           </button>
         </form>
         {status && (
@@ -111,6 +118,10 @@ export default function Home() {
             {status.msg}
           </p>
         )}
+        <p className={styles.privacy}>
+          🔒 Your privacy matters. We will <strong>never sell your data</strong>,
+          and your email won&apos;t be used for anything else.
+        </p>
       </section>
 
       {/* Videos */}
