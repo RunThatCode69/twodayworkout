@@ -23,7 +23,7 @@ const FAQ = [
   },
   {
     q: "How do I keep making progress?",
-    a: "Progressive overload: each week aim to add a little — one more rep, slightly more weight, or cleaner form. Small steps add up fast.",
+    a: "Over time you can add a little — one more rep, slightly more weight, or cleaner form. But there's no rush: staying at the same weight for several weeks is completely fine. Consistency and good form matter far more than constantly adding load.",
   },
   {
     q: "How fast should my reps be?",
@@ -35,7 +35,7 @@ const FAQ = [
   },
   {
     q: "Do I need to change how I eat?",
-    a: "Eat enough, and get plenty of protein (roughly your bodyweight in grams if you're building muscle). Food is what your training is built on.",
+    a: "Generally, eating enough and including a source of protein with your meals supports recovery from training. This isn't nutrition advice — everyone's needs are different, so talk to a doctor or registered dietitian for a plan that fits you.",
   },
   {
     q: "How important is sleep?",
@@ -170,19 +170,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* FAQ — beginner basics */}
-      <section className={styles.faq}>
-        <h2 className="section-title shiny">New to working out? Start here</h2>
-        <div className={styles.faqList}>
-          {FAQ.map((item) => (
-            <div key={item.q} className={styles.faqItem}>
-              <h3 className={styles.faqQ}>{item.q}</h3>
-              <p className={styles.faqA}>{item.a}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Videos — hidden until walkthroughs are ready (flip SHOW_VIDEOS) */}
       {SHOW_VIDEOS && (
         <section className={styles.videos}>
@@ -210,6 +197,19 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {/* FAQ — beginner basics (kept at the very bottom) */}
+      <section className={styles.faq}>
+        <h2 className="section-title shiny">New to working out? Start here</h2>
+        <div className={styles.faqList}>
+          {FAQ.map((item) => (
+            <div key={item.q} className={styles.faqItem}>
+              <h3 className={styles.faqQ}>{item.q}</h3>
+              <p className={styles.faqA}>{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Bottom-right portrait placeholder — swap for your photo */}
       <div className={styles.portrait} aria-label="Your photo">
