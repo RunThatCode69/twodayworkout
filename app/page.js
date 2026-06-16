@@ -140,6 +140,28 @@ export default function Home() {
         )}
       </section>
 
+      {/* Trainer intro */}
+      <section className={styles.intro}>
+        <Link href="/about" className={styles.introPhoto}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/me.jpg" alt="Brandon Poulter" />
+        </Link>
+        <div className={styles.introText}>
+          <h2 className={styles.introName}>Brandon Poulter</h2>
+          <p className={styles.introRole}>
+            Personal trainer · 10+ years of experience
+          </p>
+          <p className={styles.introBlurb}>
+            I&apos;ve coached just about everyone, from competitive athletes to
+            busy parents, kids, and grandparents. Whatever your starting point,
+            this workout is built to meet you right where you are.
+          </p>
+          <Link href="/about" className="btn btn-ghost">
+            About me
+          </Link>
+        </div>
+      </section>
+
       {/* Workout */}
       <section className={styles.workout}>
         {workout.days.map((day) => (
@@ -279,14 +301,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bottom-right portrait, links to About. Swap for your photo. */}
-      <Link href="/about" className={styles.portrait} aria-label="About me">
-        <span className={styles.portraitPhoto}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/me.jpg" alt="Brandon Poulter" />
-        </span>
-        <span className={styles.portraitBtn}>About me</span>
-      </Link>
     </main>
   );
 }
