@@ -28,7 +28,7 @@ export async function POST(request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
-      from: process.env.RESEND_FROM || "Two Day Workout <onboarding@resend.dev>",
+      from: process.env.RESEND_FROM || "Two Day Workout <workout@twodayworkout.com>",
       to: email,
       subject: "Confirm your email to get your Two Day Workout",
       html: buildConfirmEmailHtml(confirmUrl),
