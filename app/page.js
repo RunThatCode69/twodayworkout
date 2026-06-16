@@ -112,7 +112,7 @@ export default function Home() {
               Personal trainer · 10+ years of experience
             </p>
             <Link href="/about" className="btn btn-ghost">
-              About me
+              About the Creator
             </Link>
           </div>
         </div>
