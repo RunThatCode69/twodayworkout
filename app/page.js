@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { Fragment, useState } from "react";
+import Link from "next/link";
 import { workout } from "@/app/data/workout";
 import { downloadWorkoutPdf } from "@/app/lib/pdf";
 import styles from "./page.module.css";
@@ -55,6 +56,10 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState(null); // { ok: boolean, msg: string }
   const [sending, setSending] = useState(false);
+  const [openLift, setOpenLift] = useState({}); // { [key]: boolean }
+
+  const toggleLift = (key) =>
+    setOpenLift((prev) => ({ ...prev, [key]: !prev[key] }));
 
   async function sendToEmail(e) {
     e.preventDefault();
@@ -110,6 +115,7 @@ export default function Home() {
           <div key={day.name} className={styles.card}>
             <h2 className={styles.cardTitle}>{day.name}</h2>
             {day.rest && <p className={styles.rest}>{day.rest}</p>}
+            <p className={styles.tapHint}>Tap a lift for form tips</p>
             <table className={styles.table}>
               <thead>
                 <tr>
@@ -119,16 +125,47 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {day.exercises.map((ex) => (
-                  <tr key={ex.move}>
-                    <td>
-                      {ex.move}
-                      {ex.note && <span className={styles.note}>{ex.note}</span>}
-                    </td>
-                    <td className={styles.num}>{ex.sets}</td>
-                    <td className={styles.num}>{ex.reps}</td>
-                  </tr>
-                ))}
+                {day.exercises.map((ex) => {
+                  const key = `${day.name}-${ex.move}`;
+                  const open = !!openLift[key];
+                  return (
+                    <Fragment key={key}>
+                      <tr
+                        className={styles.exRow}
+                        onClick={() => toggleLift(key)}
+                      >
+                        <td>
+                          <button
+                            type="button"
+                            className={styles.exToggle}
+                            aria-expanded={open}
+                          >
+                            <span className={styles.chevron}>
+                              {open ? "▾" : "▸"}
+                            </span>
+                            {ex.move}
+                          </button>
+                          {ex.note && (
+                            <span className={styles.note}>{ex.note}</span>
+                          )}
+                        </td>
+                        <td className={styles.num}>{ex.sets}</td>
+                        <td className={styles.num}>{ex.reps}</td>
+                      </tr>
+                      {open && ex.cues && (
+                        <tr className={styles.cueRow}>
+                          <td colSpan={3}>
+                            <ul className={styles.cues}>
+                              {ex.cues.map((c) => (
+                                <li key={c}>{c}</li>
+                              ))}
+                            </ul>
+                          </td>
+                        </tr>
+                      )}
+                    </Fragment>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -211,11 +248,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bottom-right portrait placeholder — swap for your photo */}
-      <div className={styles.portrait} aria-label="Your photo">
-        {/* <img src="/me.jpg" alt="Your name" /> */}
-        Your photo
-      </div>
+      {/* Bottom-right portrait — links to About. Swap for your photo. */}
+      <Link href="/about" className={styles.portrait} aria-label="About me">
+        <span className={styles.portraitPhoto}>
+          {/* <img src="/me.jpg" alt="Brandon Poulter" /> */}
+          Your photo
+        </span>
+        <span className={styles.portraitBtn}>About me</span>
+      </Link>
     </main>
   );
 }

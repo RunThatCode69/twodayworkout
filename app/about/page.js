@@ -13,9 +13,11 @@ export default function About() {
 
         <p className={styles.lead}>
           Hi, I&apos;m{" "}
-          <strong className={styles.name}>Brandon Poulter</strong>. I built Two
-          Day Workout to make consistent training simple — two focused sessions
-          a week that anyone can stick to.
+          <strong className={styles.name}>Brandon Poulter</strong>. I have over{" "}
+          <strong>10 years of experience in personal training and training
+          athletes</strong>, and I built Two Day Workout to make consistent
+          training simple — two focused sessions a week that anyone can stick
+          to.
         </p>
 
         <h2 className={styles.h2}>Liability &amp; Disclaimer</h2>

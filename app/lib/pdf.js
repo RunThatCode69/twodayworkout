@@ -86,14 +86,75 @@ export function generateWorkoutPdf(workout) {
     y += 24;
   });
 
-  // Footer
-  doc.setTextColor(111, 134, 168);
-  doc.setFontSize(9);
-  doc.text(
-    "Consult a physician before starting any exercise program. Train at your own risk.",
-    margin,
-    doc.internal.pageSize.getHeight() - 36
-  );
+  // ── "How to do each lift" section ──────────────────────────────
+  const pageH = doc.internal.pageSize.getHeight();
+  const ensureSpace = (needed) => {
+    if (y + needed > pageH - margin) {
+      doc.addPage();
+      y = margin;
+    }
+  };
+
+  doc.addPage();
+  y = margin;
+
+  doc.setTextColor(47, 111, 224);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(20);
+  doc.text("How to do each lift", margin, y);
+  y += 28;
+
+  workout.days.forEach((day) => {
+    ensureSpace(40);
+    doc.setTextColor(61, 134, 245);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(15);
+    doc.text(day.name, margin, y);
+    y += 20;
+
+    day.exercises.forEach((ex) => {
+      if (!ex.cues || ex.cues.length === 0) return;
+      ensureSpace(28);
+
+      // Exercise name
+      doc.setTextColor(40, 40, 40);
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(12.5);
+      doc.text(String(ex.move), margin, y);
+      y += 16;
+
+      // Bullet cues (wrapped)
+      doc.setTextColor(68, 84, 110);
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(11);
+      const bulletIndent = 14;
+      const textWidth = pageW - margin * 2 - bulletIndent;
+      ex.cues.forEach((cue) => {
+        const lines = doc.splitTextToSize(String(cue), textWidth);
+        ensureSpace(lines.length * 14 + 2);
+        doc.text("•", margin, y);
+        doc.text(lines, margin + bulletIndent, y);
+        y += lines.length * 14 + 2;
+      });
+      y += 10;
+    });
+
+    y += 8;
+  });
+
+  // Footer on every page
+  const pageCount = doc.internal.getNumberOfPages();
+  for (let p = 1; p <= pageCount; p++) {
+    doc.setPage(p);
+    doc.setTextColor(111, 134, 168);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(9);
+    doc.text(
+      "Consult a physician before starting any exercise program. Train at your own risk.",
+      margin,
+      pageH - 36
+    );
+  }
 
   return doc;
 }
