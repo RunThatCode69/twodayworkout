@@ -1,6 +1,6 @@
 import crypto from "crypto";
 
-// Stateless, signed confirmation tokens — no database required.
+// Stateless, signed confirmation tokens, no database required.
 // A token is `payload.signature`, where payload is base64url-encoded
 // JSON {email, exp} and signature is an HMAC-SHA256 over the payload.
 

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-// Workout content. This is the single source of truth — the front
+// Workout content. This is the single source of truth, the front
 // page, the downloadable PDF, and the emailed copy all read from here.
 // `videoUrl` accepts a YouTube/Vimeo embed URL (or leave "" for an
 // empty slot). `note` shows a smaller line beneath an exercise.
@@ -10,10 +10,10 @@ export const workout = {
   title: "Two Day Workout",
   tagline: "Two sessions a week. No fluff. Just show up.",
   howToUse: [
-    "Start very light on your first day — there's no rush. Nail your form first, then build up the weight over the coming weeks.",
+    "Start very light on your first day, there's no rush. Nail your form first, then build up the weight over the coming weeks.",
     "Your first set of every exercise should be your lightest. Work up in weight set to set as your body warms up.",
     "Rest 60–90 seconds between sets.",
-    "Move through a full range of motion with control on every rep — slow and clean beats fast and sloppy.",
+    "Move through a full range of motion with control on every rep, slow and clean beats fast and sloppy.",
     "Do both days each week, with at least one rest day in between.",
   ],
   days: [
@@ -42,7 +42,7 @@ export const workout = {
             "Grip the bar wider than your shoulders, chest up.",
             "Pull the bar to your upper chest, leading with your elbows.",
             "Squeeze your shoulder blades down and together.",
-            "Let the bar rise back under control — don't let it yank you up.",
+            "Let the bar rise back under control, don't let it yank you up.",
           ],
         },
         {
@@ -103,7 +103,7 @@ export const workout = {
           reps: "12",
           cues: [
             "Hold dumbbells in front of your thighs with soft (slightly bent) knees.",
-            "Push your hips back to hinge — this is not a squat.",
+            "Push your hips back to hinge, this is not a squat.",
             "Keep the dumbbells close to your legs and your back flat.",
             "Lower until you feel a hamstring stretch, then squeeze your glutes to stand tall.",
           ],
@@ -134,7 +134,7 @@ export const workout = {
           move: "Single Arm Farmers Carries",
           sets: "3",
           reps: "50 meters",
-          note: "or Side Planks — 3 x 30 seconds each side",
+          note: "or Side Planks, 3 x 30 seconds each side",
           cues: [
             "Hold one heavy dumbbell at your side.",
             "Stand tall with shoulders back and core braced.",

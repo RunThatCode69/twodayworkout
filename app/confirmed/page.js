@@ -9,7 +9,7 @@ const MESSAGES = {
   ok: {
     emoji: "✅",
     title: "You're all set!",
-    body: "Your Two Day Workout is on its way — check your inbox for the email with the PDF attached.",
+    body: "Your Two Day Workout is on its way, check your inbox for the email with the PDF attached.",
   },
   invalid: {
     emoji: "⏳",

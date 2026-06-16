@@ -16,7 +16,7 @@ const FAQ = [
   },
   {
     q: "Should I worry about how much weight to lift?",
-    a: "No. Start lighter than you think and nail your form first. You can always add weight next week — you can't un-tweak a back.",
+    a: "No. Start lighter than you think and nail your form first. You can always add weight next week, you can't un-tweak a back.",
   },
   {
     q: "Do I need to warm up?",
@@ -24,7 +24,7 @@ const FAQ = [
   },
   {
     q: "How do I keep making progress?",
-    a: "Over time you can add a little — one more rep, slightly more weight, or cleaner form. But there's no rush: staying at the same weight for several weeks is completely fine. Consistency and good form matter far more than constantly adding load.",
+    a: "Over time you can add a little, one more rep, slightly more weight, or cleaner form. But there's no rush: staying at the same weight for several weeks is completely fine. Consistency and good form matter far more than constantly adding load.",
   },
   {
     q: "How fast should my reps be?",
@@ -36,7 +36,7 @@ const FAQ = [
   },
   {
     q: "Do I need to change how I eat?",
-    a: "Generally, eating enough and including a source of protein with your meals supports recovery from training. This isn't nutrition advice — everyone's needs are different, so talk to a doctor or registered dietitian for a plan that fits you.",
+    a: "Generally, eating enough and including a source of protein with your meals supports recovery from training. This isn't nutrition advice, everyone's needs are different, so talk to a doctor or registered dietitian for a plan that fits you.",
   },
   {
     q: "How important is sleep?",
@@ -44,7 +44,7 @@ const FAQ = [
   },
   {
     q: "Should I be drinking more water?",
-    a: "Yes — stay hydrated through the day, not just during the workout. Even mild dehydration saps strength and focus.",
+    a: "Yes, stay hydrated through the day, not just during the workout. Even mild dehydration saps strength and focus.",
   },
   {
     q: "What if something hurts?",
@@ -76,7 +76,7 @@ export default function Home() {
       if (res.ok) {
         setStatus({
           ok: true,
-          msg: "Almost there — check your inbox and tap the confirmation link to get your workout.",
+          msg: "Almost there, check your inbox and tap the confirmation link to get your workout.",
         });
         setEmail("");
       } else {
@@ -226,7 +226,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Videos — hidden until walkthroughs are ready (flip SHOW_VIDEOS) */}
+      {/* Videos, hidden until walkthroughs are ready (flip SHOW_VIDEOS) */}
       {SHOW_VIDEOS && (
         <section className={styles.videos}>
           <h2 className="section-title shiny">Follow along</h2>
@@ -254,7 +254,7 @@ export default function Home() {
         </section>
       )}
 
-      {/* FAQ — beginner basics (kept at the very bottom) */}
+      {/* FAQ, beginner basics (kept at the very bottom) */}
       <section className={styles.faq}>
         <h2 className="section-title shiny">New to working out? Start here</h2>
         <div className={styles.faqList}>
@@ -267,7 +267,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bottom-right portrait — links to About. Swap for your photo. */}
+      {/* Bottom-right portrait, links to About. Swap for your photo. */}
       <Link href="/about" className={styles.portrait} aria-label="About me">
         <span className={styles.portraitPhoto}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
