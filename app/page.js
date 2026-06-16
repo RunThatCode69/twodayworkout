@@ -9,6 +9,10 @@ import styles from "./page.module.css";
 // Flip to true when the walkthrough videos are ready to publish.
 const SHOW_VIDEOS = false;
 
+// Paste your Stripe Payment Link here (https://dashboard.stripe.com/payment-links).
+// Leave it as "" to hide the support button.
+const SUPPORT_URL = "";
+
 const FAQ = [
   {
     q: "How often should I do this?",
@@ -114,6 +118,16 @@ export default function Home() {
           >
             📋 How to use this workout
           </button>
+          {SUPPORT_URL && (
+            <a
+              className="btn btn-support"
+              href={SUPPORT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ❤ Support the site
+            </a>
+          )}
         </div>
 
         {showHowTo && (
