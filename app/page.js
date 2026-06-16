@@ -118,16 +118,14 @@ export default function Home() {
           >
             📋 How to use this workout
           </button>
-          {SUPPORT_URL && (
-            <a
-              className="btn btn-support"
-              href={SUPPORT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ❤ Support the site
-            </a>
-          )}
+          <a
+            className="btn btn-support"
+            href={SUPPORT_URL || "#"}
+            target={SUPPORT_URL ? "_blank" : undefined}
+            rel="noopener noreferrer"
+          >
+            ❤ Support the site
+          </a>
         </div>
 
         {showHowTo && (
