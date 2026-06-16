@@ -9,12 +9,82 @@
 export const workout = {
   title: "Two Day Workout",
   tagline: "Two sessions a week. No fluff. Just show up.",
+  howToUse: [
+    "Start very light on your first day — there's no rush. Nail your form first, then build up the weight over the coming weeks.",
+    "Your first set of every exercise should be your lightest. Work up in weight set to set as your body warms up.",
+    "Rest 60–90 seconds between sets.",
+    "Move through a full range of motion with control on every rep — slow and clean beats fast and sloppy.",
+    "Do both days each week, with at least one rest day in between.",
+  ],
   days: [
     {
       name: "Day 1",
-      rest: "One minute to 90 seconds rest each",
+      rest: "60–90 seconds rest between sets",
       videoUrl: "", // e.g. "https://www.youtube.com/embed/VIDEO_ID"
       videoLabel: "Day 1 walkthrough",
+      exercises: [
+        {
+          move: "Bench Press",
+          sets: "3",
+          reps: "12",
+          cues: [
+            "Lie flat with feet planted and a slight natural arch in your lower back.",
+            "Grip slightly wider than shoulder-width.",
+            "Lower the weight to mid-chest under control.",
+            "Press up and slightly back without slamming your elbows locked.",
+          ],
+        },
+        {
+          move: "Pulldown",
+          sets: "3",
+          reps: "12",
+          cues: [
+            "Grip the bar wider than your shoulders, chest up.",
+            "Pull the bar to your upper chest, leading with your elbows.",
+            "Squeeze your shoulder blades down and together.",
+            "Let the bar rise back under control — don't let it yank you up.",
+          ],
+        },
+        {
+          move: "Single Arm Rows",
+          sets: "3",
+          reps: "12",
+          cues: [
+            "Brace one hand and knee on a bench with a flat back.",
+            "Let the dumbbell hang, then row it up toward your hip.",
+            "Drive your elbow back and squeeze the shoulder blade.",
+            "Lower under control and keep your torso still; switch sides.",
+          ],
+        },
+        {
+          move: "Single Arm Press",
+          sets: "3",
+          reps: "12",
+          cues: [
+            "Hold a dumbbell at shoulder height, palm facing forward.",
+            "Brace your core so you don't lean back.",
+            "Press straight overhead until your arm is extended.",
+            "Lower under control to the start; switch sides.",
+          ],
+        },
+        {
+          move: "Single Arm Standing Dumbbell Hold",
+          sets: "3",
+          reps: "30 sec / side",
+          cues: [
+            "Hold one dumbbell at your side, standing tall.",
+            "Brace your core and keep your shoulders level.",
+            "Resist the pull to one side for the full time.",
+            "Switch hands and repeat.",
+          ],
+        },
+      ],
+    },
+    {
+      name: "Day 2",
+      rest: "60–90 seconds rest between sets",
+      videoUrl: "",
+      videoLabel: "Day 2 walkthrough",
       exercises: [
         {
           move: "Goblet Squats",
@@ -70,69 +140,6 @@ export const workout = {
             "Stand tall with shoulders back and core braced.",
             "Walk with controlled steps, resisting the urge to lean away from the weight.",
             "Switch hands and repeat the distance.",
-          ],
-        },
-      ],
-    },
-    {
-      name: "Day 2",
-      rest: "One minute to 90 seconds rest each",
-      videoUrl: "",
-      videoLabel: "Day 2 walkthrough",
-      exercises: [
-        {
-          move: "Bench Press",
-          sets: "3",
-          reps: "12",
-          cues: [
-            "Lie flat with feet planted and a slight natural arch in your lower back.",
-            "Grip slightly wider than shoulder-width.",
-            "Lower the weight to mid-chest under control.",
-            "Press up and slightly back without slamming your elbows locked.",
-          ],
-        },
-        {
-          move: "Pulldown",
-          sets: "3",
-          reps: "12",
-          cues: [
-            "Grip the bar wider than your shoulders, chest up.",
-            "Pull the bar to your upper chest, leading with your elbows.",
-            "Squeeze your shoulder blades down and together.",
-            "Let the bar rise back under control — don't let it yank you up.",
-          ],
-        },
-        {
-          move: "Single Arm Rows",
-          sets: "3",
-          reps: "12",
-          cues: [
-            "Brace one hand and knee on a bench with a flat back.",
-            "Let the dumbbell hang, then row it up toward your hip.",
-            "Drive your elbow back and squeeze the shoulder blade.",
-            "Lower under control and keep your torso still; switch sides.",
-          ],
-        },
-        {
-          move: "Single Arm Press",
-          sets: "3",
-          reps: "12",
-          cues: [
-            "Hold a dumbbell at shoulder height, palm facing forward.",
-            "Brace your core so you don't lean back.",
-            "Press straight overhead until your arm is extended.",
-            "Lower under control to the start; switch sides.",
-          ],
-        },
-        {
-          move: "Single Arm Standing Dumbbell Hold",
-          sets: "3",
-          reps: "30 sec / side",
-          cues: [
-            "Hold one dumbbell at your side, standing tall.",
-            "Brace your core and keep your shoulders level.",
-            "Resist the pull to one side for the full time.",
-            "Switch hands and repeat.",
           ],
         },
       ],

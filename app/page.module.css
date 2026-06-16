@@ -36,6 +36,45 @@
   margin-top: 32px;
 }
 
+/* ---------- How to use this workout ---------- */
+.howTo {
+  max-width: 640px;
+  margin: 28px auto 0;
+  background: var(--blue-50);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 28px;
+  text-align: left;
+}
+.howToTitle {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--blue-600);
+}
+.howToList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.howToList li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  color: #44546e;
+  font-size: 0.98rem;
+}
+.howToList li:last-child {
+  margin-bottom: 0;
+}
+.howToList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--blue-400);
+  font-weight: 800;
+}
+
 /* ---------- Workout cards ---------- */
 .workout {
   display: grid;

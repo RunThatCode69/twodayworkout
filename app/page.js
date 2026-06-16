@@ -57,6 +57,7 @@ export default function Home() {
   const [status, setStatus] = useState(null); // { ok: boolean, msg: string }
   const [sending, setSending] = useState(false);
   const [openLift, setOpenLift] = useState({}); // { [key]: boolean }
+  const [showHowTo, setShowHowTo] = useState(false);
 
   const toggleLift = (key) =>
     setOpenLift((prev) => ({ ...prev, [key]: !prev[key] }));
@@ -106,7 +107,25 @@ export default function Home() {
           <a className="btn btn-ghost" href="#email">
             ✉ Send to my email
           </a>
+          <button
+            className="btn btn-ghost"
+            onClick={() => setShowHowTo((v) => !v)}
+            aria-expanded={showHowTo}
+          >
+            📋 How to use this workout
+          </button>
         </div>
+
+        {showHowTo && (
+          <div className={styles.howTo}>
+            <h2 className={styles.howToTitle}>How to use this workout</h2>
+            <ul className={styles.howToList}>
+              {workout.howToUse.map((tip) => (
+                <li key={tip}>{tip}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </section>
 
       {/* Workout */}

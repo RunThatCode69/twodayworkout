@@ -21,6 +21,27 @@ export function generateWorkoutPdf(workout) {
   doc.text(workout.tagline, margin, y);
   y += 28;
 
+  // How to use this workout
+  if (workout.howToUse && workout.howToUse.length) {
+    doc.setTextColor(47, 111, 224);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(14);
+    doc.text("How to use this workout", margin, y);
+    y += 18;
+
+    doc.setTextColor(68, 84, 110);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    const tipWidth = pageW - margin * 2 - 14;
+    workout.howToUse.forEach((tip) => {
+      const lines = doc.splitTextToSize(String(tip), tipWidth);
+      doc.text("•", margin, y);
+      doc.text(lines, margin + 14, y);
+      y += lines.length * 14 + 4;
+    });
+    y += 16;
+  }
+
   workout.days.forEach((day) => {
     // Day heading
     doc.setTextColor(61, 134, 245); // --blue-500
