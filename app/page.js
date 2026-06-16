@@ -11,7 +11,7 @@ const SHOW_VIDEOS = false;
 
 // Paste your Stripe Payment Link here (https://dashboard.stripe.com/payment-links).
 // Leave it as "" to hide the support button.
-const SUPPORT_URL = "";
+const SUPPORT_URL = "https://buy.stripe.com/6oUaEZ3AB7lo2Z81L23wQ00";
 
 const FAQ = [
   {
