@@ -36,6 +36,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# large video source files — host these on YouTube/Vimeo, don't commit them
+*.MOV
+*.mov
+*.mp4
+*.m4v
+*.avi
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

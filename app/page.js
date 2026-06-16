@@ -251,8 +251,8 @@ export default function Home() {
       {/* Bottom-right portrait — links to About. Swap for your photo. */}
       <Link href="/about" className={styles.portrait} aria-label="About me">
         <span className={styles.portraitPhoto}>
-          {/* <img src="/me.jpg" alt="Brandon Poulter" /> */}
-          Your photo
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/me.jpg" alt="Brandon Poulter" />
         </span>
         <span className={styles.portraitBtn}>About me</span>
       </Link>
