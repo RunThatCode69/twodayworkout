@@ -101,6 +101,22 @@ export default function Home() {
         <h1 className={`${styles.title} shiny`}>{workout.title}</h1>
         <p className={styles.tagline}>{workout.tagline}</p>
 
+        <div className={styles.intro}>
+          <Link href="/about" className={styles.introPhoto}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/me.jpg" alt="Brandon Poulter" />
+          </Link>
+          <div className={styles.introText}>
+            <h2 className={styles.introName}>Brandon Poulter</h2>
+            <p className={styles.introRole}>
+              Personal trainer · 10+ years of experience
+            </p>
+            <Link href="/about" className="btn btn-ghost">
+              About me
+            </Link>
+          </div>
+        </div>
+
         <div className={styles.actions}>
           <button
             className="btn btn-primary"
@@ -138,28 +154,6 @@ export default function Home() {
             </ul>
           </div>
         )}
-      </section>
-
-      {/* Trainer intro */}
-      <section className={styles.intro}>
-        <Link href="/about" className={styles.introPhoto}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/me.jpg" alt="Brandon Poulter" />
-        </Link>
-        <div className={styles.introText}>
-          <h2 className={styles.introName}>Brandon Poulter</h2>
-          <p className={styles.introRole}>
-            Personal trainer · 10+ years of experience
-          </p>
-          <p className={styles.introBlurb}>
-            I&apos;ve coached just about everyone, from competitive athletes to
-            busy parents, kids, and grandparents. Whatever your starting point,
-            this workout is built to meet you right where you are.
-          </p>
-          <Link href="/about" className="btn btn-ghost">
-            About me
-          </Link>
-        </div>
       </section>
 
       {/* Workout */}
