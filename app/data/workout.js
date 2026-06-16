@@ -46,7 +46,7 @@ export const workout = {
           ],
         },
         {
-          move: "Single Arm Rows",
+          move: "Single Arm Dumbbell Rows",
           sets: "3",
           reps: "12",
           cues: [
@@ -57,7 +57,7 @@ export const workout = {
           ],
         },
         {
-          move: "Single Arm Press",
+          move: "Single Arm Dumbbell Press",
           sets: "3",
           reps: "12",
           cues: [
