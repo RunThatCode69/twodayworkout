@@ -4,8 +4,8 @@
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:01:14.933">
-    <property name="length">00:01:14.967</property>
+  <producer id="black" in="00:00:00.000" out="00:01:28.300">
+    <property name="length">00:01:28.333</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -14,7 +14,7 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:01:14.933"/>
+    <entry producer="black" in="00:00:00.000" out="00:01:28.300"/>
   </playlist>
   <chain id="chain0" out="00:00:21.433">
     <property name="length">00:00:21.467</property>
@@ -83,13 +83,13 @@
     <property name="shotcut:hash">92536f28085bddc03a4325241cac032f</property>
     <property name="shotcut:caption">bench demo.mov</property>
     <property name="xml">was here</property>
-    <filter id="filter0" in="00:00:06.900" out="00:00:09.700">
+    <filter id="filter0" in="00:00:06.900" out="00:00:12.133">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">-0.5</property>
       <property name="av.s">1.9</property>
     </filter>
-    <filter id="filter1" in="00:00:06.900" out="00:00:09.700">
+    <filter id="filter1" in="00:00:06.900" out="00:00:12.133">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-70</property>
@@ -165,13 +165,13 @@
     <property name="shotcut:hash">9c1408a794739443c15e169e7c059a86</property>
     <property name="shotcut:caption">pulldowndemo.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter2" in="00:00:06.933" out="00:00:09.333">
+    <filter id="filter2" in="00:00:06.933" out="00:00:11.533">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">-0.5</property>
       <property name="av.s">1.95</property>
     </filter>
-    <filter id="filter3" in="00:00:06.933" out="00:00:09.333">
+    <filter id="filter3" in="00:00:06.933" out="00:00:11.533">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-70</property>
@@ -248,7 +248,7 @@
     <property name="shotcut:caption">Single Arm Press Demo.MOV</property>
     <property name="xml">was here</property>
     <property name="meta.shotcut.vui">1</property>
-    <filter id="filter4" in="00:00:13.767" out="00:00:16.133">
+    <filter id="filter4" in="00:00:12.100" out="00:00:16.100">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -262,13 +262,13 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter5" in="00:00:13.767" out="00:00:16.133">
+    <filter id="filter5" in="00:00:12.100" out="00:00:16.100">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">-0.5</property>
       <property name="av.s">1.95</property>
     </filter>
-    <filter id="filter6" in="00:00:13.767" out="00:00:16.133">
+    <filter id="filter6" in="00:00:12.100" out="00:00:16.100">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-70</property>
@@ -344,13 +344,13 @@
     <property name="shotcut:hash">25ffb4e0047bf87e8acff86cb9438a7b</property>
     <property name="shotcut:caption">bentoverrowsdemo.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter7" in="00:00:14.667" out="00:00:17.067">
+    <filter id="filter7" in="00:00:14.667" out="00:00:18.433">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">-0.5</property>
       <property name="av.s">1.95</property>
     </filter>
-    <filter id="filter8" in="00:00:14.667" out="00:00:17.067">
+    <filter id="filter8" in="00:00:14.667" out="00:00:18.433">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-70</property>
@@ -426,13 +426,13 @@
     <property name="shotcut:hash">0b6e8edc3034c4771c41675c0571f655</property>
     <property name="shotcut:caption">overheadholddemo.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter9" in="00:00:12.667" out="00:00:14.467">
+    <filter id="filter9" in="00:00:12.667" out="00:00:14.333">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">-0.5</property>
       <property name="av.s">1.95</property>
     </filter>
-    <filter id="filter10" in="00:00:12.667" out="00:00:14.467">
+    <filter id="filter10" in="00:00:12.667" out="00:00:14.333">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-70</property>
@@ -509,7 +509,7 @@
     <property name="shotcut:hash">94f05deb9101cd1baba98adeb3f41f68</property>
     <property name="shotcut:caption">this one.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter11" in="00:00:16.900" out="00:00:18.767">
+    <filter id="filter11" in="00:00:17.033" out="00:00:18.767">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">0</property>
@@ -590,7 +590,6 @@
       <property name="av.h">0</property>
       <property name="av.b">0</property>
       <property name="av.s">2.45</property>
-      <property name="disable">1</property>
     </filter>
     <filter id="filter13" in="00:00:19.200" out="00:00:25.733">
       <property name="background">color:#00000000</property>
@@ -605,12 +604,6 @@
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
-    </filter>
-    <filter id="filter14" in="00:00:19.200" out="00:00:25.733">
-      <property name="mlt_service">avfilter.hue</property>
-      <property name="av.h">0</property>
-      <property name="av.b">0</property>
-      <property name="av.s">2.31</property>
     </filter>
   </chain>
   <chain id="chain7" out="00:00:28.533">
@@ -680,33 +673,13 @@
     <property name="shotcut:hash">b4c244cdf3aea0415e9f75543008f88e</property>
     <property name="shotcut:caption">squatdemo.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter15" in="00:00:09.233" out="00:00:11.500">
+    <filter id="filter14" in="00:00:09.233" out="00:00:14.400">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">0</property>
       <property name="av.s">2.45</property>
     </filter>
   </chain>
-  <tractor id="tractor0" in="00:00:00.000" out="00:00:00.000">
-    <property name="shotcut:transition">lumaMix</property>
-    <track producer="chain6" in="00:00:25.733" out="00:00:25.733"/>
-    <track producer="chain7" in="00:00:09.233" out="00:00:09.233"/>
-    <transition id="transition0">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="factory">loader</property>
-      <property name="mlt_service">luma</property>
-      <property name="alpha_over">1</property>
-      <property name="fix_background_alpha">1</property>
-    </transition>
-    <transition id="transition1">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="start">-1</property>
-      <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
-    </transition>
-  </tractor>
   <chain id="chain8" out="00:00:35.833">
     <property name="length">00:00:35.867</property>
     <property name="eof">pause</property>
@@ -774,13 +747,13 @@
     <property name="shotcut:hash">aebd9eab123d029ab36f52c9fc06fb48</property>
     <property name="shotcut:caption">kill ya.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter16" in="00:00:10.000" out="00:00:13.233">
+    <filter id="filter15" in="00:00:10.000" out="00:00:16.300">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">0</property>
       <property name="av.s">2.4</property>
     </filter>
-    <filter id="filter17" in="00:00:10.000" out="00:00:13.233">
+    <filter id="filter16" in="00:00:10.000" out="00:00:16.300">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-70</property>
@@ -857,7 +830,7 @@
     <property name="shotcut:caption">renamed.MOV</property>
     <property name="xml">was here</property>
     <property name="meta.shotcut.vui">1</property>
-    <filter id="filter18" in="00:00:18.700" out="00:00:22.333">
+    <filter id="filter17" in="00:00:18.700" out="00:00:22.333">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -871,19 +844,11 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter19" in="00:00:18.700" out="00:00:22.333">
+    <filter id="filter18" in="00:00:18.700" out="00:00:22.333">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">0</property>
       <property name="av.s">2.4</property>
-    </filter>
-    <filter id="filter20" in="00:00:18.700" out="00:00:22.333">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-70</property>
-      <property name="channel_mask">-1</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">audioGain</property>
     </filter>
   </chain>
   <chain id="chain10" out="00:00:18.700">
@@ -953,19 +918,11 @@
     <property name="shotcut:hash">cebca320da07307752b70bcc1b5d549a</property>
     <property name="shotcut:caption">suitcase.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter21" in="00:00:06.900" out="00:00:09.967">
+    <filter id="filter19" in="00:00:06.900" out="00:00:12.833">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">0</property>
       <property name="av.s">2.2</property>
-    </filter>
-    <filter id="filter22" in="00:00:06.900" out="00:00:09.967">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-70</property>
-      <property name="channel_mask">-1</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">audioGain</property>
     </filter>
   </chain>
   <chain id="chain11" out="00:00:34.700">
@@ -1035,104 +992,14 @@
     <property name="shotcut:hash">e9c79c6e27fa1c688aa236647e592605</property>
     <property name="shotcut:caption">farmerscarries.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter23" in="00:00:08.867" out="00:00:11.200">
+    <filter id="filter20" in="00:00:08.867" out="00:00:12.567">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">0</property>
       <property name="av.s">2.2</property>
     </filter>
-    <filter id="filter24" in="00:00:08.867" out="00:00:11.200">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-70</property>
-      <property name="channel_mask">-1</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">audioGain</property>
-    </filter>
   </chain>
-  <chain id="chain12" out="00:00:24.167">
-    <property name="length">00:00:24.200</property>
-    <property name="eof">pause</property>
-    <property name="resource">neverlookback.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">8697723</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-15T21:50:53.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">153672</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-15T21:50:53.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-15T21:50:53.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T16:50:53-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-15T21:50:53</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">c3e1cfa427bd67d310649fcbce1a64c6</property>
-    <property name="shotcut:caption">neverlookback.MOV</property>
-    <property name="xml">was here</property>
-    <filter id="filter25" in="00:00:11.533" out="00:00:16.467">
-      <property name="mlt_service">avfilter.hue</property>
-      <property name="av.h">0</property>
-      <property name="av.b">0</property>
-      <property name="av.s">2.31</property>
-    </filter>
-    <filter id="filter26" in="00:00:11.533" out="00:00:16.467">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-70</property>
-      <property name="channel_mask">-1</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">audioGain</property>
-    </filter>
-  </chain>
-  <chain id="chain13" out="00:00:51.100">
+  <chain id="chain12" out="00:00:51.100">
     <property name="length">00:00:51.133</property>
     <property name="eof">pause</property>
     <property name="resource">this one.MOV</property>
@@ -1201,13 +1068,13 @@
     <property name="shotcut:caption">this one.MOV</property>
     <property name="xml">was here</property>
     <property name="meta.shotcut.vui">1</property>
-    <filter id="filter27" in="00:00:36.933" out="00:00:48.200">
+    <filter id="filter21" in="00:00:36.933" out="00:00:48.200">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">0</property>
       <property name="av.s">2.45</property>
     </filter>
-    <filter id="filter28" in="00:00:36.933" out="00:00:48.200">
+    <filter id="filter22" in="00:00:36.933" out="00:00:48.200">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1222,7 +1089,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </chain>
-  <chain id="chain14" out="00:00:29.867">
+  <chain id="chain13" out="00:00:29.867">
     <property name="length">00:00:29.900</property>
     <property name="eof">pause</property>
     <property name="resource">saved.MOV</property>
@@ -1291,7 +1158,7 @@
     <property name="shotcut:caption">saved.MOV</property>
     <property name="xml">was here</property>
     <property name="meta.shotcut.vui">1</property>
-    <filter id="filter29" in="00:00:03.667" out="00:00:28.000">
+    <filter id="filter23" in="00:00:03.667" out="00:00:28.000">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1305,7 +1172,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter30" in="00:00:03.667" out="00:00:28.000">
+    <filter id="filter24" in="00:00:03.667" out="00:00:28.000">
       <property name="mlt_service">avfilter.hue</property>
       <property name="av.h">0</property>
       <property name="av.b">0</property>
@@ -1315,822 +1182,359 @@
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="chain0" in="00:00:06.900" out="00:00:09.700"/>
-    <entry producer="chain1" in="00:00:06.933" out="00:00:09.100"/>
-    <entry producer="chain2" in="00:00:14.000" out="00:00:16.133"/>
-    <entry producer="chain3" in="00:00:14.667" out="00:00:17.067"/>
+    <entry producer="chain0" in="00:00:06.900" out="00:00:12.133"/>
+    <entry producer="chain1" in="00:00:06.933" out="00:00:11.533"/>
+    <entry producer="chain2" in="00:00:12.100" out="00:00:16.100"/>
+    <entry producer="chain3" in="00:00:14.667" out="00:00:18.433"/>
     <entry producer="chain4" in="00:00:12.667" out="00:00:14.333"/>
     <entry producer="chain5" in="00:00:17.033" out="00:00:18.767"/>
-    <entry producer="chain6" in="00:00:19.200" out="00:00:25.700"/>
-    <entry producer="tractor0" in="00:00:00.000" out="00:00:00.000"/>
-    <entry producer="chain7" in="00:00:09.267" out="00:00:11.500"/>
-    <entry producer="chain8" in="00:00:10.000" out="00:00:13.233"/>
+    <entry producer="chain6" in="00:00:19.200" out="00:00:25.733"/>
+    <entry producer="chain7" in="00:00:09.233" out="00:00:14.400"/>
+    <entry producer="chain8" in="00:00:10.000" out="00:00:16.300"/>
     <entry producer="chain9" in="00:00:18.700" out="00:00:22.333"/>
-    <entry producer="chain10" in="00:00:06.900" out="00:00:09.967"/>
-    <entry producer="chain11" in="00:00:08.867" out="00:00:11.200"/>
-    <entry producer="chain12" in="00:00:11.533" out="00:00:16.467"/>
-    <entry producer="chain13" in="00:00:36.933" out="00:00:48.200"/>
-    <entry producer="chain14" in="00:00:03.667" out="00:00:28.000"/>
+    <entry producer="chain10" in="00:00:06.900" out="00:00:12.833"/>
+    <entry producer="chain11" in="00:00:08.867" out="00:00:12.567"/>
+    <entry producer="chain12" in="00:00:36.933" out="00:00:48.200"/>
+    <entry producer="chain13" in="00:00:03.667" out="00:00:28.000"/>
   </playlist>
+  <chain id="chain14" out="00:00:51.100">
+    <property name="length">00:00:51.133</property>
+    <property name="eof">pause</property>
+    <property name="resource">this one.MOV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">9</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">30</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1080</property>
+    <property name="meta.media.0.codec.height">1920</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">2020</property>
+    <property name="meta.media.0.codec.color_trc">18</property>
+    <property name="meta.media.0.codec.name">hevc</property>
+    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">8571225</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">fltp</property>
+    <property name="meta.media.1.codec.sample_rate">48000</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">aac</property>
+    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.1.codec.bit_rate">165955</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
+    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
+    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
+    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
+    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T17:37:13-0500</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2026-06-15T22:37:13</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">30</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">2020</property>
+    <property name="meta.media.color_trc">18</property>
+    <property name="meta.media.has_b_frames">2</property>
+    <property name="meta.media.width">1080</property>
+    <property name="meta.media.height">1920</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="meta.media.variable_frame_rate">1</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:hash">94f05deb9101cd1baba98adeb3f41f68</property>
+    <property name="shotcut:caption">this one.MOV</property>
+    <property name="xml">was here</property>
+    <filter id="filter25" in="00:00:02.700" out="00:00:05.333">
+      <property name="mlt_service">avfilter.hue</property>
+      <property name="av.h">0</property>
+      <property name="av.b">0</property>
+      <property name="av.s">2.45</property>
+    </filter>
+  </chain>
+  <chain id="chain15" out="00:00:51.100">
+    <property name="length">00:00:51.133</property>
+    <property name="eof">pause</property>
+    <property name="resource">this one.MOV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">9</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">30</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1080</property>
+    <property name="meta.media.0.codec.height">1920</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">2020</property>
+    <property name="meta.media.0.codec.color_trc">18</property>
+    <property name="meta.media.0.codec.name">hevc</property>
+    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">8571225</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">fltp</property>
+    <property name="meta.media.1.codec.sample_rate">48000</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">aac</property>
+    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.1.codec.bit_rate">165955</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
+    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
+    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
+    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
+    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T17:37:13-0500</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2026-06-15T22:37:13</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">30</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">2020</property>
+    <property name="meta.media.color_trc">18</property>
+    <property name="meta.media.has_b_frames">2</property>
+    <property name="meta.media.width">1080</property>
+    <property name="meta.media.height">1920</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="meta.media.variable_frame_rate">1</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:hash">94f05deb9101cd1baba98adeb3f41f68</property>
+    <property name="shotcut:caption">this one.MOV</property>
+    <property name="xml">was here</property>
+    <filter id="filter26" in="00:00:00.033" out="00:00:01.500">
+      <property name="mlt_service">avfilter.hue</property>
+      <property name="av.h">0</property>
+      <property name="av.b">0</property>
+      <property name="av.s">2.45</property>
+    </filter>
+  </chain>
+  <chain id="chain16" out="00:00:51.100">
+    <property name="length">00:00:51.133</property>
+    <property name="eof">pause</property>
+    <property name="resource">this one.MOV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">9</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">30</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1080</property>
+    <property name="meta.media.0.codec.height">1920</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">2020</property>
+    <property name="meta.media.0.codec.color_trc">18</property>
+    <property name="meta.media.0.codec.name">hevc</property>
+    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">8571225</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">fltp</property>
+    <property name="meta.media.1.codec.sample_rate">48000</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">aac</property>
+    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.1.codec.bit_rate">165955</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
+    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
+    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
+    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
+    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T17:37:13-0500</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2026-06-15T22:37:13</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">30</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">2020</property>
+    <property name="meta.media.color_trc">18</property>
+    <property name="meta.media.has_b_frames">2</property>
+    <property name="meta.media.width">1080</property>
+    <property name="meta.media.height">1920</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="meta.media.variable_frame_rate">1</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:hash">94f05deb9101cd1baba98adeb3f41f68</property>
+    <property name="shotcut:caption">this one.MOV</property>
+    <property name="xml">was here</property>
+    <filter id="filter27" in="00:00:05.367" out="00:00:07.800">
+      <property name="mlt_service">avfilter.hue</property>
+      <property name="av.h">0</property>
+      <property name="av.b">0</property>
+      <property name="av.s">2.45</property>
+    </filter>
+  </chain>
+  <chain id="chain17" out="00:00:51.100">
+    <property name="length">00:00:51.133</property>
+    <property name="eof">pause</property>
+    <property name="resource">this one.MOV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">9</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">30</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1080</property>
+    <property name="meta.media.0.codec.height">1920</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">2020</property>
+    <property name="meta.media.0.codec.color_trc">18</property>
+    <property name="meta.media.0.codec.name">hevc</property>
+    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">8571225</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">fltp</property>
+    <property name="meta.media.1.codec.sample_rate">48000</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">aac</property>
+    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.1.codec.bit_rate">165955</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.creation_time.markup">2026-06-15T22:37:13.000000Z</property>
+    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
+    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
+    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
+    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
+    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T17:37:13-0500</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2026-06-15T22:37:13</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">30</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">2020</property>
+    <property name="meta.media.color_trc">18</property>
+    <property name="meta.media.has_b_frames">2</property>
+    <property name="meta.media.width">1080</property>
+    <property name="meta.media.height">1920</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="meta.media.variable_frame_rate">1</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:hash">94f05deb9101cd1baba98adeb3f41f68</property>
+    <property name="shotcut:caption">this one.MOV</property>
+    <property name="xml">was here</property>
+    <filter id="filter28" in="00:00:07.833" out="00:00:17.000">
+      <property name="mlt_service">avfilter.hue</property>
+      <property name="av.h">0</property>
+      <property name="av.b">0</property>
+      <property name="av.s">2.45</property>
+    </filter>
+  </chain>
   <playlist id="playlist1">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V2</property>
-    <blank length="00:00:00.033"/>
+    <entry producer="chain14" in="00:00:02.700" out="00:00:05.333"/>
+    <entry producer="chain15" in="00:00:00.033" out="00:00:01.500"/>
+    <blank length="00:00:01.100"/>
+    <entry producer="chain16" in="00:00:05.367" out="00:00:07.800"/>
+    <blank length="00:00:02.167"/>
+    <entry producer="chain17" in="00:00:07.833" out="00:00:17.000"/>
   </playlist>
-  <chain id="chain15" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain16" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain17" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain18" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain19" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain20" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain21" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain22" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain23" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain24" out="00:01:04.433">
-    <property name="length">00:01:04.467</property>
-    <property name="eof">pause</property>
-    <property name="resource">hotgirl.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">90</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">9794528</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">158571</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:25:28.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:25:28-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:25:28</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="meta.media.variable_frame_rate">1</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:hash">f40c401f6fbb1930e37d4b30b1feedfc</property>
-    <property name="shotcut:caption">hotgirl.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
-  <chain id="chain25" out="00:00:06.533">
-    <property name="length">00:00:06.567</property>
-    <property name="eof">pause</property>
-    <property name="resource">thetruth.MOV</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="meta.media.nb_streams">9</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">24</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1920</property>
-    <property name="meta.media.0.codec.height">1080</property>
-    <property name="meta.media.0.codec.rotate">270</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p10le</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">2020</property>
-    <property name="meta.media.0.codec.color_trc">18</property>
-    <property name="meta.media.0.codec.name">hevc</property>
-    <property name="meta.media.0.codec.long_name">HEVC (High Efficiency Video Coding)</property>
-    <property name="meta.media.0.codec.bit_rate">2070003</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-06-16T02:48:24.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">Core Media Video</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">HEVC</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">169522</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-06-16T02:48:24.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">Core Media Audio</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">qt  </property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">qt  </property>
-    <property name="meta.attr.creation_time.markup">2026-06-16T02:48:24.000000Z</property>
-    <property name="meta.attr.com.apple.quicktime.full-frame-rate-playback-intent.markup">0</property>
-    <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-    <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 17</property>
-    <property name="meta.attr.com.apple.quicktime.software.markup">26.3.1</property>
-    <property name="meta.attr.com.apple.quicktime.creationdate.markup">2026-06-15T21:48:24-0500</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="creation_time">2026-06-16T02:48:24</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">24</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">2020</property>
-    <property name="meta.media.color_trc">18</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:skipConvert">0</property>
-    <property name="meta.media.top_field_first">0</property>
-    <property name="meta.media.progressive">1</property>
-    <property name="shotcut:hash">2b74678247553bfe87146a4acfc73095</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">thetruth.MOV</property>
-    <property name="xml">was here</property>
-  </chain>
   <playlist id="playlist2">
     <property name="shotcut:audio">1</property>
     <property name="shotcut:name">A1</property>
-    <entry producer="chain15" in="00:00:09.900" out="00:00:12.700"/>
-    <entry producer="chain16" in="00:00:15.200" out="00:00:17.367"/>
-    <entry producer="chain17" in="00:00:19.633" out="00:00:21.767"/>
-    <entry producer="chain18" in="00:00:23.667" out="00:00:26.067"/>
-    <entry producer="chain19" in="00:00:28.067" out="00:00:29.600"/>
-    <blank length="00:00:08.433"/>
-    <entry producer="chain20" in="00:00:11.500" out="00:00:12.700"/>
-    <blank length="00:00:01.067"/>
-    <entry producer="chain21" in="00:00:49.167" out="00:00:52.400"/>
-    <entry producer="chain22" in="00:00:52.433" out="00:00:56.000"/>
-    <entry producer="chain23" in="00:00:52.733" out="00:00:55.867"/>
-    <entry producer="chain24" in="00:00:58.633" out="00:01:00.967"/>
-    <entry producer="chain25" in="00:00:00.867" out="00:00:05.800"/>
+    <blank length="00:00:00.033"/>
   </playlist>
   <playlist id="playlist3">
     <property name="shotcut:audio">1</property>
     <property name="shotcut:name">A2</property>
     <blank length="00:00:00.033"/>
   </playlist>
-  <playlist id="playlist4">
-    <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V3</property>
-    <blank length="00:00:00.033"/>
-  </playlist>
-  <tractor id="tractor1" title="Shotcut version 25.12.31" in="00:00:00.000" out="00:01:14.933">
+  <tractor id="tractor0" title="Shotcut version 25.12.31" in="00:00:00.000" out="00:01:28.300">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">0</property>
     <property name="shotcut:processingMode">Native8Cpu</property>
-    <property name="shotcut:scaleFactor">0.894736</property>
     <track producer="background"/>
     <track producer="playlist0"/>
     <track producer="playlist1" hide="both"/>
     <track producer="playlist2" hide="video"/>
     <track producer="playlist3" hide="video"/>
-    <track producer="playlist4" hide="both"/>
-    <transition id="transition2">
+    <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition3">
+    <transition id="transition1">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
       <property name="compositing">0</property>
@@ -2140,14 +1544,14 @@
       <property name="threads">0</property>
       <property name="disable">1</property>
     </transition>
-    <transition id="transition4">
+    <transition id="transition2">
       <property name="a_track">0</property>
       <property name="b_track">2</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition5">
+    <transition id="transition3">
       <property name="a_track">1</property>
       <property name="b_track">2</property>
       <property name="compositing">0</property>
@@ -2157,36 +1561,19 @@
       <property name="threads">0</property>
       <property name="disable">0</property>
     </transition>
-    <transition id="transition6">
+    <transition id="transition4">
       <property name="a_track">0</property>
       <property name="b_track">3</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition7">
+    <transition id="transition5">
       <property name="a_track">0</property>
       <property name="b_track">4</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
-    </transition>
-    <transition id="transition8">
-      <property name="a_track">0</property>
-      <property name="b_track">5</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition9">
-      <property name="a_track">1</property>
-      <property name="b_track">5</property>
-      <property name="compositing">0</property>
-      <property name="distort">0</property>
-      <property name="rotate_center">0</property>
-      <property name="mlt_service">qtblend</property>
-      <property name="threads">0</property>
-      <property name="disable">0</property>
     </transition>
   </tractor>
 </mlt>

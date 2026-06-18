@@ -1,5 +1,6 @@
 import { Geist } from "next/font/google";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
           <span>© {new Date().getFullYear()} Two Day Workout</span>
           <Link href="/about">Disclaimer</Link>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
